@@ -3,7 +3,7 @@
 ## Aliaksandr Kharchanka
 
 Discord: zzmeyz89 (@zzmeyz89)  
-E-mail: zzmeyz@mail.ru
+E-mail: <zzmeyz@mail.ru>
 
 ### **SUMMARY**
 
@@ -51,5 +51,5 @@ function createPhoneNumber(numbers) {
 ### **PROJECTS**
 
 CV for RS-School:  
-https://github.com/zzmeyz89/rsschool-cv
+<https://github.com/zzmeyz89/rsschool-cv>
 
