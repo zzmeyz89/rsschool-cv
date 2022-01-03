@@ -52,9 +52,24 @@ body {
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
     align-self: stretch;
     background-color: var(--bg-color);
     width: 300px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill {
+    padding: 4px 0;
 }
 
 .photo {
@@ -155,13 +170,48 @@ main {
     font-size: 16px;
 }
 
+.general-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.general-link:hover {
+    text-decoration: underline;
+}
+
 .general {
     padding: 0 40px; 
 }
 
 footer {
-    height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--main-color);
+}
+
+.footer-text {
+    align-self: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rss-link {
+    height: 40px;
+    width: 115px;
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.github-author {
+    height: 40px;
+    width: 40px;
+    background-image: url(./assets/svg/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 970px) {
@@ -172,9 +222,34 @@ footer {
     .nav-element{
         margin: 10px 0;
     }
+    aside {
+        justify-content: center;
+        width: 600px;
+    }
+    .profile-info{
+        background-color: #FFFFFF;
+    }
+    .photo {
+        height: 638px;
+    }
+    .profile-photo {
+        width: 600px; 
+        padding: 0;
+    }
     .main-content {
       flex-direction: column;
-      
-    }  
+      align-items: center;
+    } 
+    .skill-list{
+        flex-basis: 100px;
+    }
+    #skills {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skills-item {
+        width: 300px;
+    }    
   }
 
