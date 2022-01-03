@@ -1,10 +1,11 @@
 :root {
     --ll-main-color: #4075B6; 
     --l-main-color: #205EA9; 
-    --main_color: #00479D; 
+    --main-color: #00479D; 
     --d-main-color: #003E89; 
     --dd-main-color: #003576;
     --bg-color: #BBBBBB;
+    font-family:  'Open Sans', sans-serif;
 }
 
 html {
@@ -12,7 +13,7 @@ html {
   }
 
 header {
-    background-color: var(--main_color);
+    background-color: var(--main-color);
     padding: 0 10px;
 }
 
@@ -22,7 +23,6 @@ body {
     justify-content: space-between; 
     min-height: 100vh; 
     margin: 0; 
-    font-family:  'Open Sans', sans-serif;
 }
 
 .nav-bar {
@@ -53,6 +53,73 @@ aside {
     width: 300px;
 }
 
+.profile-photo {
+    width: 300px; 
+    padding: 0;
+}
+
+.contacts {
+    color: #FFFFFF;
+    height: 30px;
+}
+
+.contact-email {
+    background-color: var(--dd-main-color);
+    padding: 10px 20px;
+}
+
+.contacts-email-link {
+    padding: 0 40px;
+    text-decoration: none;
+}
+
+.contact-email::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(./assets/svg/email.png);
+}
+
+.contact-discord {
+    background-color: var(--d-main-color);
+    padding: 10px 20px;
+}
+
+.contacts-discord-link {
+    padding: 0 40px;
+    text-decoration: none;
+}
+
+.contact-discord::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(./assets/svg/discord.png);
+}
+
+.contact-github {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+}
+
+.contacts-github-link {
+    padding: 0 40px;
+    text-decoration: none;
+}
+
+.contact-github::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(./assets/svg/github.png);
+}
+
 main {
     border: blue 2px solid;
     min-width: 400px;
@@ -61,10 +128,7 @@ main {
 }
 
 footer {
-    background-color: var(--main_color);
+    background-color: var(--main-color);
 }
 
-.profile-photo {
-    width: 300px; 
-}
 
