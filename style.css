@@ -1,1 +1,70 @@
-Any content...
+:root {
+    --ll-main-color: #4075B6; 
+    --l-main-color: #205EA9; 
+    --main_color: #00479D; 
+    --d-main-color: #003E89; 
+    --dd-main-color: #003576;
+    --bg-color: #BBBBBB;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+header {
+    background-color: var(--main_color);
+    padding: 0 10px;
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 100vh; 
+    margin: 0; 
+    font-family:  'Open Sans', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-content {
+    border: crimson 2px solid;
+    align-self: center; 
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 20px; 
+}
+
+aside {
+    border: green 2px solid;
+    align-self: stretch;
+    background-color: var(--bg-color);
+    width: 300px;
+}
+
+main {
+    border: blue 2px solid;
+    min-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer {
+    background-color: var(--main_color);
+}
+
+.profile-photo {
+    width: 300px; 
+}
+
