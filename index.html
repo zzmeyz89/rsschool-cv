@@ -3,10 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My CV</title>
 </head>
 <body>
-  <div>Here will be CV soon</div>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-element"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-element"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-element"><a href="#code-sample" class="nav-link">Code Sample</a></li>
+        <li class="nav-element"><a href="#projects" class="nav-link">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-content">
+    <aside>
+      <div class="profile-info">
+        <div class="photo">
+          <img class="profile-photo" src="./assets/img/CV_Photo_Placeholder.jpg" alt="Profile photo">
+        </div>
+        <div class="contacts contact-email">    
+          <a class="contacts contacts-link" href="email:zzmeyz@mail.ru?subject=About CV" title="Send E-Mail"> zzmeyz@mail.ru</a>
+        </div>
+        <div class="contacts contact-discord">
+          <a class="contacts contacts-link" href="https://discordapp.com/users/412596509826351105" title="Discord profile"> zzmeyz89 (@zzmeyz89)</a>
+        </div>
+        <div class="contacts contact-github">
+          <a class="contacts contacts-link" href="https://github.com/zzmeyz89" title="Github profile"> zzmeyz89</a>
+        </div>
+      </div>
+      <div id="skills">
+        <div class="skills-item">
+          <h3 class="general-header">SKILLS</h3>
+          <ul class="skill-list">
+            <li class="skill">English B1</li>
+            <li class="skill">Resource management</li>
+            <li class="skill">Working process development</li>
+          </ul>
+        </div>
+        <div class="skills-item">
+          <h3 class="general-header">SOFTWARE</h3>
+          <ul class="skill-list">
+            <li class="skill">Microsoft Windows</li>
+            <li class="skill">Microsoft Office</li>
+            <li class="skill">Photosop</li>
+            <li class="skill">AutoCAD</li>
+            <li class="skill">VMware</li>
+            <li class="skill">VirtualBox</li>
+            <li class="skill">Visual Studio Code</li>
+            <li class="skill">SIMATIC Step7</li>
+            <li class="skill">PCS7</li>
+            <li class="skill">TIA v16</li>
+            <li class="skill">WinCC</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section class="summary">
+        <h1 id="name">ALEXANDER KHARCHENKO</h1>
+        <h2 id="job-name">JUNIOR FRONT-END DEVELOPER</h2>
+        <div id="about">Hello! My name is Alexander and I wont to become a front-ent developer. Currently I'm studying in RS School and found out it very interesting and exiting. I can characterize myself as open mind and fast learning person. I have an ability to think analytically and to look at problems from different angles. Accurate and pedant. Ready to a new knowledges and skills.</div>
+      </section>
+      <h3 class="general-header">EXPERIENCE</h3>
+      <section class="general" id="experience">
+        <b>Process automation lead engineer</b>, Dobrush Paper Factory "Geroy Truda", June 2015 till now
+        <p>Responsibilities:
+          <ul>
+            <li>Industrial automation equipment programming</li>
+            <li>Equipment maintenance and repair</li>
+            <li>Documentation designing and translation</li>
+            <li>Interactions and communications with contractors</li>
+            <li>Factory acceptance tests of a process automation equipment</li>
+          </ul></p>
+      </section>
+      <h3 class="general-header">EDUCATION</h3>
+      <section class="general" id="education">
+        <p><b>Radio electronics engineer (specialist)</b>, Automation and Information Systems Faculty, Gomel State Technical University, Gomel, Belarus, 2015</p>
+        <p><b>Master of Engineering Science</b>, Automation and Information Systems Faculty, Gomel State Technical University, Gomel, Belarus, 2018</p>
+        <p><b>Master in Logistics</b>, Faculty of Economics and Law, International University “MITSO”, Gomel, Belarus, 2020</p>
+      </section>
+      <h3 class="general-header">CODE SAMPLE</h3>
+      <section id="code-sample">
+        <pre>
+          <code>
+            function createPhoneNumber(numbers) {
+              numbers.splice(0, 0, "(");
+              numbers.splice(4, 0, ") ");
+              numbers.splice(8, 0, "-");
+              return numbers.join('');
+            }
+          </code>
+        </pre>
+      </section>
+      <h3 class="general-header">PROJECTS</h3>
+      <section class="general" id="projects">
+        CV for RS-School:
+        <a href="https://github.com/zzmeyz89/rsschool-cv" class="general-link">https://github.com/zzmeyz89/rsschool-cv</a>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <a href="https://rs.school/js/" title="RS School" class="rss-link"></a>
+    <div class="footer-text">2022</div>
+    <a href="https://github.com/zzmeyz89" title="GitHub" class="github-author"></a>
+  </footer>
 </body>
 </html>

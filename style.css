@@ -1,1 +1,255 @@
-Any content...
+:root {
+    --ll-main-color: #4075B6; 
+    --l-main-color: #205EA9; 
+    --main-color: #00479D; 
+    --d-main-color: #003E89; 
+    --dd-main-color: #003576;
+    --bg-color: #BBBBBB;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+header {
+    background-color: var(--main-color);
+    padding: 0 10px;
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-width: 670px;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #BBBBBB;
+}
+
+.main-content {
+    align-self: center; 
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 10%; 
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    background-color: var(--bg-color);
+    width: 300px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill {
+    padding: 4px 0;
+}
+
+.photo {
+    height: 319px;
+}
+.profile-photo {
+    width: 300px; 
+    padding: 0;
+}
+
+.contacts {
+    height: 30px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contacts-link {
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+.contact-email {
+    background-color: var(--dd-main-color);
+    padding: 10px 20px;
+}
+
+.contact-email::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(./assets/svg/email.png);
+}
+
+.contact-discord {
+    background-color: var(--d-main-color);
+    padding: 10px 20px;
+}
+
+.contact-discord::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(./assets/svg/discord.png);
+}
+
+.contact-github {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+}
+
+.contact-github::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(./assets/svg/github.png);
+}
+
+main {
+    min-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 0 50px 0;
+}
+
+#name {
+    padding: 0 40px; 
+    font-size: 40px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#job-name {
+    padding: 0 40px; 
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#about {
+    padding: 0 40px; 
+    text-align: justify;
+}
+
+#code-sample {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.general-header {
+    padding: 3px 0 3px 40px;
+    background-color: #BBBBBB;
+    font-size: 16px;
+}
+
+.general-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.general-link:hover {
+    text-decoration: underline;
+}
+
+.general {
+    padding: 0 40px; 
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--main-color);
+}
+
+.footer-text {
+    align-self: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rss-link {
+    height: 40px;
+    width: 115px;
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.github-author {
+    height: 40px;
+    width: 40px;
+    background-image: url(./assets/svg/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 970px) {
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .nav-element{
+        margin: 10px 0;
+    }
+    aside {
+        justify-content: center;
+        width: 600px;
+    }
+    .profile-info{
+        background-color: #FFFFFF;
+    }
+    .photo {
+        height: 638px;
+    }
+    .profile-photo {
+        width: 600px; 
+        padding: 0;
+    }
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    } 
+    .skill-list{
+        flex-basis: 100px;
+    }
+    #skills {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skills-item {
+        width: 300px;
+    }    
+  }
+
