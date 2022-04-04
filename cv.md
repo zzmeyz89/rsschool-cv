@@ -19,7 +19,7 @@ Open mind and fast learning person.  Ability to think analytically and to look a
 - Equipment maintenance and repair
 - Industrial automation equipment programming
 - Developing working process
-- Self-studying JavaScript, NodeJS, Git, HTML, CSS
+- Self-studying JavaScript, NodeJS, Git, HTML, CSS, including RS-preschool
 - English level B1
 
 **Certificates:** Festo “Siemens CPU programming”, Festo “Siemens CPU programming. STEP7-INTERM”
@@ -40,12 +40,27 @@ June 2015 till now
 ### **CODE SAMPLE**
 
 ```js
-function createPhoneNumber(numbers) {
-    numbers.splice(0, 0, "(");
-    numbers.splice(4, 0, ") ");
-    numbers.splice(8, 0, "-");
-    return numbers.join('');
+function getCard() {
+  const arrB = createRow('B', 1, 15, 5);
+  const arrI = createRow('I', 16, 30, 5);
+  const arrN = createRow('N', 31, 45, 4);
+  const arrG = createRow('G', 46, 60, 5);
+  const arrO = createRow('O', 61, 75, 5);
+  return arrB.concat(arrI, arrN, arrG, arrO);
+}
+
+function createRow (row, min, max, quant) {
+  let result = [];
+  for (let i = 0; i < quant; i++) {
+    let number = Math.floor(Math.random() * (max - min)) +min;
+    if (result.indexOf(row + number) === -1) {
+      result.push(row + number);
+    } else {
+      --i;
+    }
   }
+  return result;
+}
   ```
 
 ### **PROJECTS**
@@ -53,3 +68,5 @@ function createPhoneNumber(numbers) {
 CV for RS-School:  
 <https://github.com/zzmeyz89/rsschool-cv>
 
+Memory-game:  
+<https://rolling-scopes-school.github.io/zzmeyz89-JSFEPRESCHOOL/memory-game>
